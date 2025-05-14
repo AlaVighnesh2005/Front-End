@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Web Worker Demo1</title>
+    </head>
+    <body>
+        <button onclick="welcome()">Welcome</button>
+        <button onclick="getValue()">Generate value</button>
+        <button onclick="hai()">Hai</button>
+        <script>
+            function getValue() {
+                var j;
+                for (var i = 0; i < 2000000000 ; i++) {
+                    j = i; 
+                }
+                alert(j);
+            }
+            function welcome() {
+                alert("Welcome");
+            }
+            function hai() {
+                alert("Hai");
+            }
+        </script>
+    </body>
+</html>

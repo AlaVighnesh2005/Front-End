@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Web Worker</title>
+    </head>
+    <body>
+        <button onclick="welcome()">Welcome</button>
+        <button onclick="getValue()">Generate value</button>
+        <button onclick="hai()">Hai</button>
+        <script>
+            function welcome() {
+                alert("Welcome");
+            }
+            function hai() {
+                alert("Hai");
+            }
+            function getValue() {
+                var w;
+                if (typeof(Worker)!== "undefined"){
+                    if (typeof(w)!=="defined"){
+                        w =new Worker("dowork.js");
+                        w.onmessage = function(event) {
+                            alert(event.data);
+                        };
+                    } else {
+                        console.log("Worker is already running");
+                    }
+                } else {
+                    console.log("Web Workers are not supported by your browser");
+                }
+            }
+        </script>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Canvas Demo</title>
+    </head>
+    <body>
+        <canvas id="canvas" width="350" height="350" style="border: 1px solid;">
+            <script>
+                var can = document.getElementById('canvas');
+                var ctx = can.getContext('2d');
+                var lg = ctx.createLinearGradient(0, 0, 100, 0);
+                lg.addColorStop(0, "red");
+                lg.addColorStop(1, "yellow");
+                ctx.fillStyle = lg;
+                ctx.fillRect(40,40,80,80);
+            </script>
+        </canvas>
+</html>

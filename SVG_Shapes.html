@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Svg Demo</title>
+    </head>
+    <body style="border:2px solid">
+        <svg width="200" height="200">
+            <rect x="10" y="10" width="50" height="50" stroke="purple" stroke_width="3px"  fill="blue" onclick="getSquareSize()" id="sq"/>
+        </svg>
+        <svg width="200" height="200">
+            <polygon points="100,10,140,50,100,190,60,50" stroke="yellow" stroke_width="3px" fill="red" id="rh" onclick="getRhombusSize()" />
+        </svg>
+        <svg width="200" height="200">
+            <polygon points="10,100,60,100,80,150,30,150" stroke="cyan" stroke_width="3px" fill="orange" id="pg" onclick="getParalellogramSize()" />
+        </svg>
+        <svg width="200" height="200">
+            <polygon points="50,10,90,90,10,90" stroke="black" stroke_width="3px" fill="grey" id="t" onclick="getTriangleSize()" />
+        </svg>
+        <script>
+            function getSquareSize() {
+                var size=document.getElementById("sq").getAttribute("width");
+                size=parseFloat(size);
+                alert("The size of square is: "+size+"x "+size);
+            }
+            function getRhombusSize() {
+                var points=document.getElementById("rh").getAttribute("points");
+                alert("The vertices of rhombus: "+points);
+            }
+            function getParalellogramSize() {
+                var points=document.getElementById("pg").getAttribute("points");
+                alert("The Parallelogram points: "+points);
+            }
+            function getTriangleSize() {
+                var  points=document.getElementById("t").getAttribute("points");
+                alert("The Triangle points: "+points);
+            }
+        </script>
+    </body>
+</html>
