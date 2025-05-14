@@ -1,0 +1,47 @@
+header {
+    background: linear-gradient(to right, #e67e22, #d35400);
+    color: white;
+}
+
+.events, .notifications {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card {
+    background-color: #fff3e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    color: #e67e22;
+}
+
+.notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notifications li {
+    background-color: #fff3e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.notifications li:hover {
+    background-color: #ffe8cc;
+}

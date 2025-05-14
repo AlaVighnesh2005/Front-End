@@ -1,0 +1,75 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(to right, #e67e22, #d35400);
+    color: white;
+}
+
+.register-form {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.register-form form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-form input, .register-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.register-form input:focus, .register-form select:focus {
+    border-color: #e67e22;
+    outline: none;
+}
+
+.register-form button {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.register-form button:hover {
+    background-color: #d35400;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+}
+
+.login-link a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
