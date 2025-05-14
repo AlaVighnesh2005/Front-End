@@ -1,0 +1,97 @@
+#home {
+    background-color:bisque;
+}
+
+#one {
+    display: inline-block;
+    height: 180px;
+    width: 250px;
+    background-image: url(Goku_Saiyan.jpg);
+    background-size: cover;
+    border: 2px solid magenta;
+    margin-right: 70px;
+}
+
+#two {
+    display: inline-block;
+    height: 180px;
+    width: 250px;
+    background-image: url(Naruto.jpeg);
+    background-size: cover;
+    border: 2px solid black;
+    margin-right: 70px;
+}
+
+#three {
+    display: inline-block;
+    height: 180px;
+    width:250px;
+    background-image: url(Luffy.jpeg);
+    background-size: cover;
+    border: 2px solid yellowgreen;
+    margin-right: 70px;
+}
+
+
+#four {
+    display: inline-block;
+    height: 180px;
+    width: 200px;
+    background-image: url(Aizen.jpeg);
+    background-size: auto;
+    border: 2px solid crimson;
+    margin-right: 50px;
+
+}
+
+
+#Goku {
+    color:black;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 240px;
+}
+
+#Naruto {
+    color:black;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 220px;
+}
+
+#Luffy {
+    color:black;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 190px;
+}
+
+#Bleach {
+    color:black;
+    font-size: 30px;
+    display: inline-block;
+}
+
+#pic1 {
+    height: 200px;
+    width: 200px;
+}
+
+#submit {
+    height: 30px;
+    width: 90px;
+    background-color: transparent;
+    color:darkred;
+    font-size: 15px;
+    font-weight:bolder;
+}
+
+#test {
+    display: inline-block;
+    height: 180px;
+    width: 250px;
+    background-image: url(Naruto.jpeg);
+    background-size: cover;
+    border: 2px solid black;
+    margin-right: 70px;
+}

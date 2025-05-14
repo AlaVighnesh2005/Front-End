@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css" >
+</head>
+<body id="home">
+    <h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Anime Quiz</h1>
+    <br><br>
+    <h2>Please Select Any option</h3>
+    <h2 id="heading2">Select Your Favourite Anime Character From Big-3</h2>
+    <div id="one" ></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+    <script>
+        Goku = document.getElementById("one");
+        Naruto = document.getElementById("two");
+        Luffy = document.getElementById("three");
+        Aizen = document.getElementById("four");
+        Goku.addEventListener("click",(e)=>{
+            Goku.innerHTML = "<audio src='goku.mp3'autoplay></audio>";
+        });
+            // const htmlContent = `
+            //     <html>
+            //     <head>
+            //         <title>SON GOKU EDIT</title>
+            //     </head>
+            //     <body>
+            //         <audio autoplay controls>
+            //             <source src="goku.mp3" type="audio/mpeg">
+            //             Your browser does not support the audio element.
+            //         </audio>
+            //     </body>
+            //     </html>
+            // `;
+            // //create a blob with the HTML content
+            // const blob = new Blob([htmlContent],{type: 'text/html'});
+            // //create a URL for a Blob and open it in a new tab
+            // const url = URL.createObjectURL(blob);
+            // window.open(url,'_main');
+        Naruto.addEventListener("click",(e)=>{
+            Naruto.innerHTML = "<audio src= 'naruto_kun.mp3' autoplay  ></audio>"
+        });
+        Luffy.addEventListener("click",(e)=>{
+            Luffy.innerHTML = "<audio src= 'luffy_singing.mp3' autoplay  ></audio>"
+        });
+        Aizen.addEventListener("click",(e)=>{
+            Aizen.innerHTML = "<audio src= 'aizen_ringtone.mp3' autoplay ></audio>"
+        });
+
+    </script>
+</body>
+</html>
