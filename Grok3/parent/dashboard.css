@@ -1,0 +1,54 @@
+header {
+    background: linear-gradient(to right, #16a085, #1abc9c);
+    color: white;
+}
+
+.stats, .history, .downloads {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.stats p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #16a085;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    background-color: #e6f3f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.history li:hover {
+    background-color: #d1e8e6;
+}
+
+.downloads {
+    text-align: center;
+}
+
+.download-btn {
+    background-color: #16a085;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+.download-btn:hover {
+    background-color: #1abc9c;
+}
