@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Canvas Demo</title>
+    </head>
+    <body>
+        <button onclick="draw()">Click me</button>
+        <img src="VVIT.jpeg" alt="A real man" id="man">
+        <canvas id="canvas" width="800" height="800" style="border: 1px solid;">
+            <script>
+                // Get the canvas element
+                const canvas = document.getElementById('canvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillText('draw an image',10,20);
+                ctx.fillStyle = "red";
+                ctx.fillRect(20,20,70,70);
+                function draw(){
+                    var img = document.getElementById('man');
+                    ctx.drawImage(img, 100, 100);
+                }
+            </script>
+        </canvas>
+</html>

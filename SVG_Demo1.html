@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>SVG Demo</title>
+    </head>
+    <body>
+        <svg width="500px" height="500px">
+            <circle cx="200px" cy="200px" r="150px" stroke="green" stroke_width="4px" fill="red" id="c" onclick="getColor()" ></circle>
+        </svg>
+        <svg width="500px" height="500px">
+            <rect width="200px" height="200px" x="100px" y="100px" stroke="blue" stroke-width="3px" fill="yellow" onclick="getSize()" id="r" ></rect>
+        </svg>
+        <script>
+            function getColor(){
+                alert("The Circle is filled with "+document.getElementById("c").getAttribute("fill")+" colour");
+            }
+
+            function getSize(){
+                var x=parseFloat(document.getElementById("r").getAttribute("width"));
+                var y=parseFloat(document.getElementById("r").getAttribute("height"));
+                alert("The Size of rectangle is: "+x+" "+y);
+            }
+        </script>
+    </body>
+</html>

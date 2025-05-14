@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>WatchPositionDemo</title>
+    </head>
+    <body>
+        <button onclick="startWatch()">Watch Position</button>
+        <button onclick="stopWatch()">Clear Position</button>
+        <div id="geo"></div>
+        <script>
+            var wp;
+            function startWatch(){
+                if(navigator.geolocation){
+                    wp=navigator.geolocation.watchPosition(showPosition,showError);
+                }
+                else{
+                    document.getElementById("geo").innerHTML="your current browser does not support geolocation";
+                }
+            }
+            
+            function showPosition(pos) {
+                document.getElementById("geo").innerHTML = "Latitude= "+pos.coords.latitude+"<br>Longitude= "+pos.coords.longitude;
+            }
+            function stopWatch(){
+                if(wp){
+                    navigator.geolocation.clearWatch(wp);
+                    alert('Watch Position is succesfully stopped');
+                }
+            }
+
+            function showError(error){
+                switch(error.code)
+                {
+                    case error.PERMISSION_DENIED :
+                        alert('Permission Denied');
+                        break;
+                    case error.LOCATION_UNAVAILABLE :
+                        alert('Location Unavailable');
+                        break;
+                    case error.TIMEOUT :
+                        alert('Timeout error');
+                        break;
+                    case error.UNKNOWN_ERRROR :
+                        alert('Failed due to some unknown error');
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>

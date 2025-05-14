@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Web Storage Demo</title>
+    </head>
+    <body>
+        <button onclick="setData()">Set</button>
+        <button onclick="getData()">Get</button>
+        <p id="text"></p>
+        <script>
+            function setData() {
+                if (typeof(Storage)!=="undefined") {
+                    localStorage.setItem("FirstName", "John");
+                    localStorage.setItem("LastName", "st");
+                } else {
+                    document.getElementById("text").innerHTML = "Sorry, your browser does not support Web Storage.";
+                }
+            }
+            function getData() {
+                if (typeof(Storage)!=="undefined"){
+                    document.getElementById("text").innerHTML = "First Name: " + localStorage.getItem("FirstName") + "<br> Last Name: " + localStorage.getItem("LastName");
+                }
+            }
+        </script>
+    </body>
+</html>
