@@ -1,0 +1,47 @@
+header {
+    background: linear-gradient(to right, #c0392b, #e74c3c);
+    color: white;
+}
+
+.attendance-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.attendance-form th, .attendance-form td {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.attendance-form th {
+    background-color: #c0392b;
+    color: white;
+}
+
+.attendance-form tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.attendance-form button {
+    background-color: #c0392b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: block;
+    margin: 0 auto;
+}
+
+.attendance-form button:hover {
+    background-color: #e74c3c;
+}
