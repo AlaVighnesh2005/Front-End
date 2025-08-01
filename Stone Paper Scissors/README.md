@@ -16,18 +16,7 @@ A simple and interactive web-based **Rock Paper Scissors** game built using **HT
 
 ## 📁 Project Structure
 
-rock-paper-scissors/
-│
-├── index.html # The main HTML file that renders the UI
-├── style.css # CSS file for styling the UI elements
-├── script.js # JavaScript file for game logic and interactivity
-│
-├── Images/ # Folder containing game assets (images)
-│ ├── rock.png # Image representing "rock" choice
-│ ├── paper.png # Image representing "paper" choice
-│ └── scissors.png # Image representing "scissors" choice
-│
-└── README.md # Project documentation (this file)
+<pre> \`\`\` rock-paper-scissors/ │ ├── index.html # The main HTML file that renders the UI ├── style.css # CSS file for styling the UI elements ├── script.js # JavaScript file for game logic and interactivity │ ├── Images/ # Folder containing game assets (images) │ ├── rock.png # Image representing "rock" choice │ ├── paper.png # Image representing "paper" choice │ └── scissors.png # Image representing "scissors" choice │ └── README.md # Project documentation (this file) \`\`\` </pre>
 
 ## 📸 Screenshot
 
