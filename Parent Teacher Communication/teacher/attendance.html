@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance - Teacher Portal</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+    <header>
+        <h1>Student Attendance</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="attendance-form">
+            <h2>Mark Attendance</h2>
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td><input type="radio" name="att-john" value="present" checked></td>
+                            <td><input type="radio" name="att-john" value="absent"></td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td><input type="radio" name="att-jane" value="present"></td>
+                            <td><input type="radio" name="att-jane" value="absent" checked></td>
+                        </tr>
+                        <tr>
+                            <td>Michael Brown</td>
+                            <td><input type="radio" name="att-michael" value="present" checked></td>
+                            <td><input type="radio" name="att-michael" value="absent"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit">Save Attendance</button>
+            </form>
+        </section>
+    </main>
+    <script src="attendance.js"></script>
+</body>
+</html>

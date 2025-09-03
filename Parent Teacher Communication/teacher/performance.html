@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Reports - Teacher Portal</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="performance.css">
+</head>
+<body>
+    <header>
+        <h1>Performance Reports</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section class="performance-form">
+            <h2>Update Student Performance</h2>
+            <form>
+                <label for="student">Student:</label>
+                <select id="student" name="student" required>
+                    <option value="" disabled selected>Select a student</option>
+                    <option value="John Doe">John Doe</option>
+                    <option value="Jane Smith">Jane Smith</option>
+                    <option value="Michael Brown">Michael Brown</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                <label for="grade">Grade:</label>
+                <input type="text" id="grade" name="grade" placeholder="Enter grade (e.g., A+)" required>
+                <label for="remarks">Remarks:</label>
+                <textarea id="remarks" name="remarks" placeholder="Enter remarks" required rows="4"></textarea>
+                <button type="submit">Update Performance</button>
+            </form>
+        </section>
+    </main>
+    <script src="performance.js"></script>
+</body>
+</html>
