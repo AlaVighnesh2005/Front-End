@@ -36,4 +36,4 @@ rock-paper-scissors/
 
 Here’s a look at the game in action:
 
-![Game in Action](.Stone Paper Scissors/images/screenshot.png)
+![Game in Action](./Images/screenshot.png)
